@@ -39,10 +39,13 @@ I also tried a Sparse Encoder (SPLADE) as an alternative, which is a hybrid mode
 
 To properly evaluate the models, I manually labeled 10 companies from the dataset with ground truth labels from the insurance taxonomy. 
 
-The models were chosen based on research, figuring out which would work best with the given dataset. It firstly started as a plan to replace each approach with a better one, but I decided to keep all approaches and have them analysed against each other instead, generating a final consensus label
+The models were chosen based on research, figuring out which would work best with the given dataset. It firstly started as a plan to replace each approach with a better one, but I decided to keep all approaches and have them analysed against each other instead.
 
+Observing the graphs in the plots directory, TF-IDF and Sparse Encoder both produced scores skewed to the left, with most classifications receiving low similarity scores (0.1-0.4), which shows a general lack of confidence and a struggle to find strong matches.
 
+Meanwhile, the Sentence Transformer had a bell-shaped distribution centered around 0.4, suggesting the model's ability to more easily distinguish between weak, medium, and strong semantic matches.
 
+Lastly, the Cross-Encoder produced a wide range of scores, many above 0.5, which suggests its ability at identifying the single best label. This model was the most confident, considering the score distributions and model agreement.
 
 
 ## Bibliography
