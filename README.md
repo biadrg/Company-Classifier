@@ -48,6 +48,8 @@ Meanwhile, the Sentence Transformer had a bell-shaped distribution centered arou
 Lastly, the Cross-Encoder produced a wide range of scores, many above 0.5, which suggests its ability at identifying the single best label. This model was the most confident, considering the score distributions and model agreement.
 
 
+## Notice: I wrote the code in Google Colab, so I downloaded the file in both .ipynb and .py formats.
+
 ## Bibliography
 
 https://medium.com/@mikeyo4800/how-to-build-a-multi-label-text-classification-model-using-nlp-and-machine-learning-2e05f72aad5f
