@@ -2,19 +2,19 @@
 
 A robust company classifier for a new insurance taxonomy.
 
-### Problem Definition
+## Problem Definition
 
 Assign (predefined) labels from the “insurance_taxonomy.csv” file to each company in the “ml_insurance_challenge.csv” file.
 
-### Data Exploration + Cleaning & Preprocessing
+## Data Exploration + Cleaning & Preprocessing
 
 The company dataset has a shape of (9494, 5), so it comprises of data ('description', 'business_tags', 'sector', 'category', 'niche') from 9494 companies.
 
 I checked the data quality and found a few missing values (12 for ‘description’ and 27 for ‘sector’ & ‘category’), as well as 2 duplicates. Since the null values represent only a small portion of the total data amount, I have decided to replace the missing values with empty strings, so that I can still use the remaining information from the other columns still. The 2 duplicates have been dropped, to have a unique dataset.
 
-There are only 7 unique ‘sector’ values, as shown in the following figure.
+There are only 7 unique ‘sector’ values, as shown in the sector_distribution.png figure.
 
-### Methodology
+## Methodology
 
 In order to give the model a clean input (with as little noise as can be), I joined all fields (into ‘combined_fields’) and removed the brankets/quotes from the ‘business_tags’ field, replaced comma separation with space separation and generally cleaned any trailing whitespaces.
 
