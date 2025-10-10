@@ -27,3 +27,16 @@ I moved on to a SentenceTransformer model, which converts text into meaningful v
 To be thorough, I also tested a CrossEncoder, which is more accurate but proved far too slow for the full dataset. I also tried a SparseEncoder as an alternative, which is a hybrid model combining TF-IDF and semantic classification.
 
 The models were chosen based on research, figuring out which would work best with the given dataset. It firstly started as a plan to replace each approach with a better one, but I decided to keep all approaches and have them analysed against each other instead, generating a final consensus label
+
+
+## Bibliography
+
+https://medium.com/@mikeyo4800/how-to-build-a-multi-label-text-classification-model-using-nlp-and-machine-learning-2e05f72aad5f
+
+https://medium.com/@brightcode/classifying-unstructured-text-into-1800-industry-categories-with-llm-and-rag-d5fe4876841f
+
+https://openrouter.ai/
+
+https://github.com/UKPLab/sentence-transformers?tab=readme-ov-file#reranker-models
+
+https://sbert.net/
