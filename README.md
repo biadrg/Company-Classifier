@@ -43,67 +43,6 @@ The models were chosen based on research, figuring out which would work best wit
 
 
 
-## Results from each model
-
-(1) Running TF-IDF encoding
-Average word count: 110.1
-Sample TF-IDF:
-                tfidf_pred_label  tfidf_sim_score
-0      Gas Installation Services         0.431768
-1      Dairy Production Services         0.159328
-2  Community Engagement Services         0.247112
-3         Boiler Repair Services         0.424995
-4       Water Treatment Services         0.142611
-TF-IDF Accuracy on manual labels:  30.0%
-Min-max score: [0.000, 0.975]
-Mean score: 0.364
-Median score: 0.331
-Unique labels assigned: 142 / 220 total
-
-
-(2) Running Sentence Transformers
-Sample SentenceTransformer:
-                st_pred_label  st_sim_score
-0   Gas Installation Services      0.485470
-1    Meat Processing Services      0.401668
-2  Bakery Production Services      0.540714
-3        Pallet Manufacturing      0.336730
-4  Ornamental Plant Nurseries      0.234818
-Sentence Transformer Accuracy on manual labels: 10.0%
-Min-max score: [0.124, 0.759]
-Mean score: 0.409
-Median score: 0.404
-Unique labels assigned: 215 / 220 total
-
-
-(3) Running Cross Encoders
-Sample CrossEncoder:
-                   ce_pred_label  ce_sim_score
-0   Property Management Services     10.856304
-1            Veterinary Services      5.620770
-2  Community Engagement Services      1.070890
-3              Printing Services     -2.501331
-4               Welding Services     -0.862203
-Cross Encoder accuracy on manual labels:  10.0%
-Min-max score: [-8.740, 10.957]
-Mean score: 4.696
-Median score: 4.353
-Unique labels assigned: 219 / 220 total
-
-
-(4) Running Sparse Encoders
-Sample SparseEncoder:
-                      se_pred_label  se_sim_score
-0  Commercial Construction Services      0.266875
-1            Pet Food Manufacturing      0.145183
-2        Bakery Production Services      0.216958
-3                 Painting Services      0.144835
-4                   Travel Services      0.060480
-Sparse Encoder accuracy on manual labels: 30.0%
-Min-max score: [0.014, 0.567]
-Mean score: 0.213
-Median score: 0.206
-Unique labels assigned: 216 / 220 total
 
 
 ## Bibliography
